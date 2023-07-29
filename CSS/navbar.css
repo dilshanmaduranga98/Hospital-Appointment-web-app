@@ -1,0 +1,102 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main_class
+{
+    background-image: url('../Assets/stunned-afro-american-woman-looks-with-scared-speechless-expression.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+}
+
+nav
+{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    transition: 0.3s linear;
+    background-color: #F58800;
+}
+
+li
+{
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+ul
+{
+    width: 100px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.logo
+{
+    flex-basis: 70%;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px 5px #030303;
+}
+
+a 
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 1px #912e00;
+}
+
+.ul_logo
+{
+    display: flex;
+    font-size: 2rem;
+}
+
+.logo_two
+{
+    color: rgb(255, 0, 0);
+}
+
+.ul
+{
+    flex-basis: 10%;
+    border-bottom: 0;
+    transition: 0.2s linear;
+    position: relative;
+    text-align: center;
+}
+
+.ul::after
+{
+    content: " ";
+    display: block;
+    background-color: tomato;
+    transition: 0.8s ease-out;
+    position: absolute;
+    margin-top: 5px;
+    left: 0;
+    border-radius: 10px;
+    width: 0;
+    height: 4px;
+}
+
+.ul:hover::after
+{
+    width: 100px;
+}

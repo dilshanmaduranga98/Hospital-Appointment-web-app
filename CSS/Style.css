@@ -1,0 +1,640 @@
+/* -------------------Initial Part--------------------------------------------------------------------------------------------------------------------------------- */
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main_class
+{
+    background-image: url('../Assets/stunned-afro-american-woman-looks-with-scared-speechless-expression.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+}
+
+nav
+{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    transition: 0.3s linear;
+    background-color: transparent;
+}
+
+li
+{
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+ul
+{
+    width: 120px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.logo
+{
+    flex-basis: 70%;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px 5px #030303;
+}
+
+a 
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 1px #912e00;
+}
+
+.ul_logo
+{
+    display: flex;
+    font-size: 2rem;
+}
+
+.logo_two
+{
+    color: rgb(255, 0, 0);
+}
+
+.ul
+{
+    flex-basis: 10%;
+    border-bottom: 0;
+    transition: 0.2s linear;
+    position: relative;
+    text-align: center;
+}
+
+.ul::after
+{
+    content: " ";
+    display: block;
+    background-color: tomato;
+    transition: 0.8s ease-out;
+    position: absolute;
+    margin-top: 5px;
+    left: 0;
+    border-radius: 10px;
+    width: 0;
+    height: 4px;
+}
+
+.ul:hover::after
+{
+    width: 120px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* --------------------------Home page-------------------------------------------------------------------------------------------------------------------------- */
+.home_main_description
+{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 100px;
+    padding-top: 150px;
+}
+
+.home_main_description h1 
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    width: 500px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 1px 8px 8px #dd9000;
+    letter-spacing: 21px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+}
+
+.home_main_description p 
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    width: 500px;
+    text-align: center;
+    line-height: 20px;
+    color: #ffffff;
+    margin-top: 10px;
+    letter-spacing: 20px;
+}
+
+.home_main_description a 
+{
+    margin-top: 50px;
+    padding: 10px 50px;
+    background-color: #002e47;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.2s linear;
+    box-shadow: 1px 2px 4px #303030;
+}
+
+.home_main_description a:hover
+{
+    background: #000e14;
+}
+
+
+.appoinment_count
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-top: 80px;
+    padding-left: 680px;
+    width: 100%;
+    gap: 30px;
+}
+
+.appoinment_count p 
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.number
+{
+    font-size: 3.5rem !important;
+    font-weight: 600;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ff660079;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* ----------------------Form page------------------------------------------------------------------------------------------------------------------------------ */
+
+.main_class_form
+{
+    background-color: #F58800;
+    position: absolute;
+    width: 100%;
+}
+
+.form_section
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 80px;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.form_section .form_heading 
+{
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #002e47 ;
+    text-transform:uppercase;
+    font-weight: 800;
+    letter-spacing: 10px;
+    margin: 30px 0; 
+}
+
+form 
+{
+    padding: 0px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal_details, .location_details, .contact_details
+{
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border: 1px solid #c2c2c2;
+    padding: 20px 40px;
+    margin: 30px 0;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.personal_details
+{
+    height: 160px;   
+}
+
+.location_details
+{
+    height: 160px;
+}
+
+.contact_details
+{  
+    height: 180px;
+}
+
+.essential
+{
+    color: red;
+    width: fit-content;
+}
+
+.reqired
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 2px;
+}
+
+.personal_details h6, .location_details h6 , .contact_details h6 
+{
+    position: relative;
+    top: -35px;
+    left: -10px;
+    background-color: #fff;
+    height: auto;
+    width: fit-content;
+    padding: 0 20px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #a3a3a3;
+}
+
+label 
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 100%;
+}
+
+label p 
+{
+    width: 150px;
+    margin: 10px 0;
+    font-size: 17px;
+    color: #353535;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input 
+{
+    height: 40px;
+    padding:0 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline-color: #dd9000;
+}
+
+select 
+{
+    height: 40px;
+    padding:0 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline-color: #dd9000;
+}
+
+input[type ="file" i]
+{
+    border: none;
+}
+
+.form_buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.form_buttons button 
+{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #002e47;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 0.1s linear;
+}
+
+.form_buttons button:hover 
+{
+    background-color: #005481;
+}
+
+.contact_div, .location_div, .personal_div
+{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* ----------------------Users page------------------------------------------------------------------------------------------------------------------------------ */
+
+.main_class_users
+{
+    background-color: #F8BC24;
+    position: absolute;
+    width: 100%;
+}
+.heading_users
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: #002e47;
+    margin-top: 70px;
+}
+
+.users_table_section
+{
+    overflow: scroll;
+    max-width: 100%;
+    max-height: 400px;
+    margin: 50px 40px;
+    background-color: #fff;  
+}
+
+table {
+    width: 100%;
+    border-collapse:collapse;
+   
+}
+
+tbody
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+th, td 
+{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+td
+{
+    min-width: 300px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+td:nth-child(1), th:nth-child(1)
+{
+    min-width: 120px;
+}
+th {
+    min-width: 300px;
+    padding: 20px;
+    background-color: #f58300;
+    color: #fff;
+    font-size: 18px;
+}
+
+.action_area_btn form 
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.action_area_btn form button
+{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+.action_area_btn form button:nth-child(2)
+{
+    background-color: #f58300;
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.action_area_btn form button:nth-child(1)
+{
+    background-color: #002e47;
+    color: #fff;
+    transition: 0.2s linear;
+}
+
+.action_area_btn form button:nth-child(1):hover
+{
+    background-color: #025a8a;
+}
+
+.action_area_btn form button:nth-child(2):hover
+{
+    background-color: #c76a00;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* ----------------------Update page------------------------------------------------------------------------------------------------------------------------------ */
+
+.Update_main_class_form
+{
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+}
+
+.Update_form_section
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 80px;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+.Update_form_section form 
+{
+    padding: 0px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Update_personal_details
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px 40px;
+    margin: 10px 0;
+    width: 500px;
+    border-radius: 10px;
+    height: fit-content;  
+}
+
+.Update_personal_div
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.Update_personal_div h1 
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #002e47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.essential
+{
+    color: red;
+    width: fit-content;
+}
+
+.reqired
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 2px;
+}
+
+.Update_form_section label 
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    flex-direction: column;
+}
+
+.Update_form_section  label p 
+{
+    width: 150px;
+    margin: 10px 0;
+    font-size: 17px;
+    color: #353535;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Update_form_section  input 
+{
+    height: 40px;
+    padding:0 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline-color: #dd9000;
+}
+
+.Update_form_section  .Update_form_buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    background-color: #27b127;
+}
+
+.Update_form_section .Update_form_buttons button 
+{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #002e47;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 0.1s linear;
+}
+
+.Update_form_section  .Update_form_buttons button:hover 
+{
+    background-color: #005481;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
